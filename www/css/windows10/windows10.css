@@ -23,7 +23,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-kubernetes-stacked-black:before{content:'\0041';}
 .icon-About:before {
     content: "\e900";
 }
