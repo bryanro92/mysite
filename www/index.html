@@ -148,6 +148,17 @@ body {font-family: Arial, Helvetica, sans-serif;}
 				<li><a class="smoothscroll" href="#about" title="">About Me</a></li>
 				<li><a class="smoothscroll" href="#services" title="">My Services</a></li>
 				<li><a class="smoothscroll" href="#stats" title="">Fun Stats</a></li>
+				<li><a class="smoothscroll" href="#credentials" title="">Experience/Education</a></li>
+				<li><a class="smoothscroll" href="#site" title="">About This Site</a></li>
+				<li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
+				<li><a href="https://linkedin.com/in/ross-t-bryan" target="_blank" title="Opens LinkedIn in a new tab.">LinkedIn</a></li>
+			</ul>	
+
+		</nav>  <!-- end #menu-nav-wrap -->
+
+	</header> <!-- end header -->  
+
+
 				<li><a class="smoothscroll" href="#site" title="">About This Site</a></li>
 				<li><a href="https://linkedin.com/in/ross-t-bryan" target="_blank" title="Opens LinkedIn in a new tab.">LinkedIn</a></li>
 				<li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
@@ -614,10 +625,11 @@ span.onclick = function() {
 			<ul class="animate-this" style="color:white">
 			<li>My site was developed to take advantage of how Cloud Run works. Cloud Run charges for compute time which increases per HTTP request, and I've built this as a single page app.</li>
 			<li>After the original request of my index.html, your browser requests the rest of my page resources such as images, css, and javascript files.</li>
-			<li>I leveraged scalable vector graphics (SVG) icons where possible to reduce the number of HTTP HTTP requests required for the site to load.</li>
+			<li>I leveraged scalable vector graphics (SVG) icons where possible to reduce the number of HTTP requests required for the site to load.</li>
 			<li>Under the hood this is a stateless site built purely on HTML and javascript, with additional javascript libraries like jquery.</li>
 			<li>You can navigate around the site without sending additional requests to Cloud Run. Stay long enough and my app will shutdown and scale to zero while you can click around and consider how my knowledge, skillset, and experience could help your business.
-			<li>View the source code including Dockerfile, my primitive build/deploy script, and site source code <a href="https://github.com/bryanro92/mysite" target="_blank">here.</a></li>
+			<li>I use the continuous deployment integration of Cloud Run that allows pushing to the source repo to automatically trigger the build and deployment of the new version.</li>
+			<li>View the source code including Dockerfile and site source code <a href="https://github.com/bryanro92/mysite" target="_blank">here.</a></li>
 			</ul>
    			</div>
    		</div> <!-- end col-six -->
