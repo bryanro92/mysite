@@ -172,7 +172,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
 			  			<div class="home-bottom-text">
 
 			  				<h3 class="animate-intro">Hello, World.</h3>
-							<h3 class="animate-intro" style="color:orange">This page is currently under construction.</h3>
 				  			<h1 class="animate-intro">
 							I am Ross Bryan.<br>
 							Computer Scientist &amp; Technologist.<br>
@@ -212,88 +211,17 @@ body {font-family: Arial, Helvetica, sans-serif;}
 					<h3 class="animate-this">About</h3>
 	   			<h1 class="animate-this">More About Me.</h1>
 
-	   			<p class="lead animate-this">Getting things to work, understanding how they work, and understanding why they work is what drove me to pursue a career in technology. 
+	   			<p class="lead animate-this">I like software development, computers, cats, and networks. 
 				   </p>					
 				</div>   		
-				<h3 class="animate-this">Hobbies</h3>
-				<p class="animate-this">
-				Outside of work I enjoy spending time outdoors biking, hiking, or camping. Sitting next to a warm bonfire on a cool night with friends or family brings me happiness. I love following the latest technology trends and I am usually reading a book furthering my understanding and passion for technology.
-				</p>
-				<h1 class="animate-this">How I do Work.</h1>
-				<p class="animate-this">
-				My core characteristics are: problem solving, systems thinking, and continuous learning. 
-				I get enjoyment from taking on challenging problems and being able to solve them through elegant solutions.
-				<br><br>
 
-				
-				</p>
-				<h3 class="animate-this">Problem Solving</h3>
-				<p class="animate-this">
-				I take a scientific approach to problem solving. Rather than <i>changing things until it works</i>, I use the <a href="http://www-personal.umich.edu/~mrother/Homepage.html" target="_blank">Toyota Kata</a>.
-				Following a methodical practice of problem solving allows me to form a hypothesis and perform experiments to achieve my desired outcome.
-				</p>
-				<h3 class="animate-this">Systems Thinking</h3>
-				<p class="animate-this">  
-				What is a system? Philosophically speaking, everything is a system. I am a system, and I am a professional at managing complex systems. 
-				My systems thinking approach allows me to architect and holistically understand applications and consider all of the inputs, outputs, and relationships with other systems.
-				</P>
-
-				<h3 class="animate-this">Continuous Learning</h3>
-				<p class="animate-this">  
-				I describe myself as a life long learner. I am always making time to learn something new whether it is formal education, community meetups, or just learning a new skill on my own.
-				I have a curiosity within me that always wants to dive deeper into a subject. 
-				</p>
-
-	   			<h1 class="animate-this">Open Source Software</h1>
-	   			<p class="lead animate-this">Open Source Software powers the world as we know it today. One of my personal goals is to be able to continuously contribute to the open source community.</p>
-				<h3>My First Contribution: Velero</h3>
-				<p class="animate-this"><a href="https://github.com/vmware-tanzu/velero" target="_blank" style="color:blue">Velero</a> is an open source tool used to backup the state of kubernetes clusters including content of persistent volumes (if enabled). I've used the tool to manage the state for all of my GKE clusters. One advantage that Google Cloud provides is using <i>Workload Identity</i> which allows mapping a kubernetes service account (KSA) to a Google Service Account (GSA). This is a huge operational and security win because it allows using a service account without having to manage any tokens or keys.
-				</p>
-				<p class="animate-this">I found a minor error in the documentation of using <a href="https://github.com/vmware-tanzu/velero-plugin-for-gcp" target="_blank" style="color:blue">velero's gcp workload identity plugin</a> and submitted my first open source PR fixing the documentation, <a href="https://github.com/vmware-tanzu/velero-plugin-for-gcp/pull/38" style="color:blue" target="_blank">found here</a>. 
-				<br><br>
-				While the contribution is minor text fix and not technical in nature, it was my first step is contributing to the open source community. My next step is to provide more technical contributions by submitting my own PRs, or reviewing other issues/PRs and providing comments and feedback.</p>
-				<h3 class="animate-this">My Stickers</h3>
-				<h1 class="animate-this">Developer Setup</h1>
-					<p class="animate-this">The stickers on my laptop are a statement of my ideals. I believe using technologies such as kubernetes, eliminating toil, and enabling self service creates safer, more reliable systems. Below is a photo I've snapped of the back of my Macbook that shows my stickers.</p>
-				<img class="animate-this" id="myImg" src="images/laptopstickers.jpg" alt="Kubernetes,No Toil,Self Service,Ops Hero, Hacks With Friends,DevOps,Openshift,Innovation,Collaboration,5 Ideals,SAST,DAST" style="width:100%;max-width:600px">
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
-</div>
-
-<script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-</script>
    		</div> <!-- end about-profile  -->
 		<div id="services" class="about-services">
 				<div class="intro">
 	   			<h3 class="animate-this">Services</h3>
 	   			<h1 class="animate-this">What I Do.</h1>
 
-	   			<p class="lead animate-this">I design, support, and administer application infrastructure. 
-				   Additionally, I build and deliver self-service solutions providing locality and empowering my customers.</p>
+	   			<p class="lead animate-this">I've taken to writing cloud native software to manage cloud native infrastructure running cloud native software.</p>
    			</div>
 
    			<ul class="services">
@@ -305,11 +233,7 @@ span.onclick = function() {
    						<h4>Architecture</h4>
    						<p>
 						   <ul>
-						   <li>I'm an experienced and proven architect designing infrastructure to host complex software. From sizing and configuring on premise database and application servers, on premise kubernetes clusters, or cloud resources I appropriately engineer solutions to meet requirements. </li>
-						   <li>Cloud providers offer many services that requires specific knowledge of when and how to use each service. Services typically range from completely provider managed with minimal configuration options available to entirely user managed with more configuration required.
-						   </li>
-							<li>Identifying system requirements and matching those to the best service for the job means discussing the trade-offs.
-							</li>
+							   <li>A picture is worth a thousand words.</li>
 							</ul>
    						</p>
    					</div>   					
@@ -322,15 +246,8 @@ span.onclick = function() {
    						<h4>Kubernetes</h4>
    						<p>
 						   <ul>
-						   <li>Since 2018 I have been working with kubernetes. In 2019 I received my Certified Kubernetes Administrator (CKA) certification. I passed the exam my first attempt which at the time had a 92% failure rate. 
+						   <li>I enjoy making computers talk to each other.
 						   </li>
-						   <li>I've manually created clusters <i>the hard way</i> by downloading the binaries, creating a CA, and signing and distributing certificates. This, in addition to being familiar with <a href="https://github.com/kubernetes/kubernetes" target="_blank">the source code</a>, and compiling kubernetes myself is how I continue to learn about the software. 
-						   </li>
-							<li>I have leveraged open source tools such as <i>kubeadm</i> and <i>kubespray</i>, an ansible wrapper of <i>kubeadm</i>, to boot strap and support production k8s clusters in on premise data centers.
-							</li>
-							<li> Moving into the cloud I support production GKE clusters and am experienced with other providers services such as AKS and EKS. I understand the intricacies
-							 of underlying k8s infrastructure and consider implementation details such as CNI (kubenet, selenium, calico, etc) providers, CSI (GCE,GCS,NFS,HostPath, etc) drivers, and details such as pod limits per node (110 on GKE clusters).
-							</li>
 							</ul>
    						</p>
    					</div>   					
@@ -342,11 +259,8 @@ span.onclick = function() {
    					<div class="service-item">
    						<h4>CICD Pipelines</h4>
    						<p><ul>
-						   <li>Shifting left and increasing feedback loops produces better quality products faster. 
+						   <li>Anything that creates less work for me.</li>
 						   </li>
-						   <li>Utilizing CICD pipelines enables the business to move faster, safer.</li>
-						   <li>I am experienced in building multi-stage pipelines for applications in multiple languages including java, angular, react, and python.</li>
-						   <li>Automating deployments and adding in deployment gates or checkpoints improves the quality of software.</li>
 						   </ul>
    						</p>
    					</div>   					
@@ -359,8 +273,7 @@ span.onclick = function() {
    						<h4>Site Reliability Engineering</h4>
    						<p>
 						   <ul>
-						   <li>I am all too comfortable with carrying around a pager in the year 2021. </li>
-						   <li>As a seasoned SRE, I have experience restoring services and debugging systems at any time of day or night.</li>
+						   <li>How do you measure a good job?</li>
 						   </ul>
 						   </p>
    					</div>   					
@@ -372,9 +285,7 @@ span.onclick = function() {
    					<div class="service-item">
    						<h4>Development</h4>
    						<p><ul>
-						   <li>Infrastructure as Code becomes easily obtainable with configuration management tools like Ansible, Puppet, or Chef.</li>
-						   <li>When considering cloud native infrastructure, developing cloud native software is the ideal solution for managing cloud native infrastructure.</li>
-						   <li>While my favorite software to develop is infrastructure as code, I enjoy all forms of development.</li>
+						   <li>The computers are on my team, they do what I say.</li>
 						   </ul>
 						   </p>
    					</div>   					
@@ -410,8 +321,8 @@ span.onclick = function() {
 							<i class="icon-OnlineSupport"></i>
 						</div>
 						<h5 class="stat-title">
-						Supported Apps</h5>
-						<h3 class="stat-count">500</h3>
+						Power Level Over</h5>
+						<h3 class="stat-count">9000</h3>
 					</div> <!-- end stat -->
 
 					<div class="bgrid stat">
@@ -421,7 +332,7 @@ span.onclick = function() {
 						<h5 class="stat-title">
 							K8s Clusters
 						</h5>
-						<h3 class="stat-count">30</h3>
+						<h3 class="stat-count">1000</h3>
 					</div> <!-- end stat -->									
 
 					<div class="bgrid stat">
@@ -445,8 +356,6 @@ span.onclick = function() {
    		<div class="col-twelve">
    			<h3 class="animate-this">Career and Education</h3>
 	   		<h1 class="animate-this">More of My Credentials.</h1>  			
-	   		
-	   		<p class="lead">I began my career by combining my passion for IT and Security working for Grand Valley Police Department. Since then, I have balanced working full time while continuing my education bouncing between a part-time and a full-time student course load. Currently, I am two classes from my M.S in Information Systems & Technology from The University of Michigan.</p>	   			
    		</div>   		
    	</div> <!-- end section-intro -->
 
@@ -454,57 +363,46 @@ span.onclick = function() {
 
 			<div class="col-six tab-full left">
 
-				<h2 class="animate-this">Experience</h2>
+				<h2 class="animate-this">Recent Experience</h2>
 
 	   		<div class="timeline-wrap">
+
+				<div class="timeline-block animate-this">
+					<div class="timeline-ico">
+						<i class="fa fa-briefcase"></i>
+					</div>
+					<div class="timeline-header">
+						<p class="timeframe">March 2021 - Present</p>
+						<h3>Red Hat</h3>
+						<h4>Sr Site Reliability Engineer</h4>	   					
+					</div>
+				</div> <!-- end timeline-block -->
 
    				<div class="timeline-block animate-this">
 	   				<div class="timeline-ico">
 	   					<i class="fa fa-briefcase"></i>
 	   				</div>
 	   				<div class="timeline-header">
-	   					<p class="timeframe">October 2018 - Present</p>
+	   					<p class="timeframe">October 2018 - March 2021</p>
 	   					<h3>University of Michigan: Michigan Medicine</h3>
-	   					<h4>Senior DevOps Engineer</h4>	   					
-	   				</div>
-	   				<div class="timeline-content">	   					
-	   					<p>Architect and design technical solutions to business problems. Build and maintain on premise and cloud kubernetes clusters. Implement CICD solutions, pipelines, and assembly lines providing fully automated lifecycles. SRE role responsible for achieving SLA/SLO’s for customer applications and all internal tooling included self-hosted GitLab, SonarQube, Nexus OSS, Rundeck, and Jenkins</p>
+	   					<h4>Sr DevOps Engineer</h4>	   					
 	   				</div>
 	   			</div> <!-- end timeline-block -->
 
-	   			<div class="timeline-block animate-this">
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
-	   				<div class="timeline-header">
-	   					<p class="timeframe">May 2016 - October 2018</p>
-	   					<h3>University of Michigan: Michigan Medicine</h3>
-	   					<h4>Systems Programmer</h4>	   				
-	   				</div>
-	   				<div class="timeline-desc">	   					
-	   					<p>Develop infrastructure as code to support enterprise infrastructure, and perform a SRE role to keep clinical, education, and research web applications online.Automate, establish, and document processes and workflows to effectively maintain the consistently expanding environment.
-						Establish DevOps and automation operational processes, designing infrastructure as code, and providing and delivering CI/CD
-						</p>
-	   				</div>
-	   			</div> <!-- end timeline-block -->
 
-	   			<div class="timeline-block animate-this">
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
-	   				<div class="timeline-header">
-	   					<p class="timeframe">August 2011 - April 2016</p>
-	   					<h3>Grand Valley Police Department</h3>
-	   					<h4>Systems Administrator</h4>	   					
-	   				</div>
-	   				<div class="timeline-content">	   					
-	   					<p>Maintain, upgrade, and support software and hardware computer equipment for Grand Valley Police Department’s in car and field offices. Implemented a web application for a project to deploy and track GPS units located in field offices for real time tracking and alerting of movement.
-						Configured network shares and network storage in car and office kiosk workstations.
-						</p>
-	   				</div>
-	   			</div> <!-- end timeline-block -->
+				  <div class="timeline-block animate-this">
+					<div class="timeline-ico">
+						<i class="fa fa-briefcase"></i>
+					</div>
+					<div class="timeline-header">
+						<p class="timeframe">May 2016 - October 2018</p>
+						<h3>University of Michigan: Michigan Medicine</h3>
+						<h4>Systems Programmer</h4>	   					
+					</div>
+				</div> <!-- end timeline-block -->
 
-   			</div> <!-- end timeline-wrap -->				
+
+   			</div> 		
    		
 	   	</div> <!-- end col-six -->
 
@@ -519,15 +417,9 @@ span.onclick = function() {
 	   					<i class="fa fa-graduation-cap"></i>
 	   				</div>
 	   				<div class="timeline-header">
-	   					<p class="timeframe">January 2018 - Present</p>
+	   					<p class="timeframe">In Progress</p>
 	   					<h3>University of Michigan</h3>
 						<h4 style="margin-bottom:0rem">M.S. Information Systems & Technology</h4>
-						<h5 style="margin-bottom:1.8rem">Emphasis in Enterprise Systems & Technologies</h5>
-	   				</div>
-	   				<div class="timeline-content">	   					
-	   					<p>Paused due to covid, 2 classes from completion.<br>
-						I am a strong proponent of the absolute parellels between manufacturing and information technology. My masters education has continued to provide insight and clarity into my high level understanding of how IT excelerates a business, and how implementing the same fundamentals that make manufacturing succesful enable enterprise IT to succeed.
-						</p>
 	   				</div>
 	   			</div> <!-- end timeline-block -->
 
@@ -536,28 +428,22 @@ span.onclick = function() {
 	   					<i class="fa fa-graduation-cap"></i>
 	   				</div>
 	   				<div class="timeline-header">
-	   					<p class="timeframe">August 2010 - April 2016</p>
 	   					<h3>Grand Valley State University</h3>
 	   					<h4>B.S. Computer Science</h4>	   				
 	   				</div>
-	   				<div class="timeline-desc">	   					
-	   					<p>A world class computer science education. GVSU properly educated me and prepared me to be a professional in the world of Computer Science & Information Technology. Foundational knowledge of data structures & algorithims, computer architecture, programming languages, operating systems, and computer networking ascertained through extremely high homework, lab, and project workloads.</p>
-	   				</div>
 	   			</div> <!-- end timeline-block -->
 
 	   			<div class="timeline-block animate-this">
 	   				<div class="timeline-ico">
 	   					<i class="fa fa-graduation-cap"></i>
 	   				</div>
-	   				<div class="timeline-header">
-	   					<p class="timeframe">August 2010 - April 2016</p>
+	   			<div class="timeline-header">
+					<div class="timeline-ico">
+						<i class="fa fa-graduation-cap"></i>
+					</div>
 	   					<h3>Grand Valley State University</h3>
 	   					<h4>B.S. Criminal Justice</h4>	   					
 	   				</div>
-	   				<div class="timeline-content">	   					
-	   					<p>I double majored in Computer Science and Criminal Justice. The two fields seemingly opposite on the surface level, are seemingly intertwined in the everchanging field of I.\T. My senior CJ thesis was on the legality of the federal government compelling Apple to decrypt users iPhone's to expose potentially incriminating data.<br> Should the federal government be able to legally compel companies to code backdoors into their systems?</p>
-	   				</div>
-
 	   			</div> <!-- end timeline-block -->
 
    			</div> <!-- end timeline-wrap -->	   		
@@ -577,49 +463,10 @@ span.onclick = function() {
 
    			<div class="section-intro">
    				<h3 class="animate-this">About this Site.</h3>
-   				<h5 class="animate-this" style="color:gray">Technical Stuff.</h5>
-				
-   			   <h1 class="animate-this">Google Cloud Run.</h1>
+   				<h5 class="animate-this" style="color:gray">Deployed to Google Cloud Run</h5>
 			<p class="animate-this" style="color:white">
-			This site scales to zero when no one is using it! That is one advantage to Cloud Run's serverless computing platform. I like to reduce my bills, and I could help you reduce yours as well while optimizing for reliability.
+			This site automatically horzontally autoscales from zero to hundreds of containers depending on use. 
 			</p>
-			<h3 class="animate-this">Infrastructure</h3>
-			<p class="animate-this" style="color:white">
-			What happens when you visit the site, but the application wasn't deployed and web server was not running?
-			<br>
-			<ul class="animate-this" style="color:white">
-			<li>As DNS resolves in the users browser, their <code style="color:black">HTTP GET</code> request to my site connects to a fully managed Google Load Balancer which terminates the TLS connection and triggers the deployment of my application.</li>
-			<li>More specifically, the trigger creates a k8s deployment on a google managed cluster and the container is deployed, this is known as a cold start.</li>
-			<li>A scheduler determines a virtual machine to deploy my container to, and the container is downloaded from my personal private docker registry.</li>
-			<li>My web server starts up, within milliseconds, and is ready to begin serving requests.</li>
-			<li>Once the client connections are terminated, the application <i>scales to zero</i>.</li>
-			</ul>
-			<h3 class="animate-this">Scale to Zero</h3>
-			<p class="animate-this" style="color:white">
-			<ul class="animate-this" style="color:white">
-			<li>For a short amount of time the container is placed into an <i>idle state</i>, but unable to access any processor resources, and therefore I am no longer incurring any charges.</li>
-			<li>If a connection comes in during this idle state, the cpu lock is removed and the container resumes serving requests.</li>
-			<li>If no client requests come in the next few minutes then the container is shutdown and will proceed with a cold start next time the site is accessed.</li>
-			</ul>
-			</p>
-			<h3 class="animate-this">Security</h3>
-			<ul class="animate-this" style="color:white">
-			<li>While the client has established an encrypted TLS connection with the front end load balancer, the load balancer back end encapsulates the <code style="color:black">HTTP</code> request and crafts a RPC layer 7 request which is protected using <i>Application Layer Transport Security (ALTS)</i>.</li>
-			<li>ALTS was created by Google in 2007, and is managed and maintained by Google.</li>
-			<li>Since ALTS runs on Google hardware they are able to easily upgrade and maintain it allowing them to quickly define what cryptographic protocols are in use.</li>
-			<li>This ensures state of the art encryption and reduces my operational responsibility in mitigating or defending against zero days.</li>
-			</ul>
-			</p>
-			<h3 class="animate-this">Source Code</h3>
-			<ul class="animate-this" style="color:white">
-			<li>My site was developed to take advantage of how Cloud Run works. Cloud Run charges for compute time which increases per HTTP request, and I've built this as a single page app.</li>
-			<li>After the original request of my index.html, your browser requests the rest of my page resources such as images, css, and javascript files.</li>
-			<li>I leveraged scalable vector graphics (SVG) icons where possible to reduce the number of HTTP requests required for the site to load.</li>
-			<li>Under the hood this is a stateless site built purely on HTML and javascript, with additional javascript libraries like jquery.</li>
-			<li>You can navigate around the site without sending additional requests to Cloud Run. Stay long enough and my app will shutdown and scale to zero while you can click around and consider how my knowledge, skillset, and experience could help your business.
-			<li>I use the continuous deployment integration of Cloud Run that allows pushing to the source repo to automatically trigger the build and deployment of the new version.</li>
-			<li>View the source code including Dockerfile and site source code <a href="https://github.com/bryanro92/mysite" target="_blank">here.</a></li>
-			</ul>
    			</div>
    		</div> <!-- end col-six -->
    	</div> <!-- end row wide -->
@@ -633,10 +480,12 @@ span.onclick = function() {
    		<div class="col-twelve">
    			<h3 class="animate-this">Connect with me.</h3>
 			   <br><br>
-			<p class="animate-this" style="color:white">I am about to begin my next journey at Red Hat. I have accepted a position as a <i>Senior Site Reliability Engineer</i> (SRE).</p>
-			<p class="animate-this" style="color: white">Past: Senior DevOps Engineer that built the next generation data center and moved application infrastructure to on premise and cloud kubernetes.</p>
+   			<p class="lead animate-this"><a href="https://linkedin.com/in/ross-t-bryan" target="_blank" title="Opens LinkedIn in a new tab.">On LinkedIn.</a>
 			   <br><br>
-   			<p class="lead animate-this" style="color:white">I enjoy conversations. If you'd like to contact me, please connect with or message me on <a href="https://linkedin.com/in/ross-t-bryan" target="_blank" title="Opens LinkedIn in a new tab.">LinkedIn</a>!</p>
+			   <br><br>
+			   <br><br>
+			   <br><br>
+			   <br><br>
    		</div> 
    	</div> <!-- end section-intro -->
 </section> <!-- end contact -->
